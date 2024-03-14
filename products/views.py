@@ -23,7 +23,7 @@ def products(request, category_id=None, page=1):
     products_paginator = paginator.page(page)
 
     context = {
-        'title': 'Store - Каталог',
+        'title': 'Store - Կատալոգ',
         'products': products_paginator,
         'categories': ProductCategory.objects.all(),
 

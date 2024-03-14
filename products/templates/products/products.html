@@ -72,7 +72,7 @@
                         <div class="card-footer text-center">
                             <a class="btn btn-outline-success"
                                href="{% url 'products:basket_add' product.id %}">
-                                Отправить в корзину
+                                Ուղարկել զամբյուղ
                             </a>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                                 <a class="page-link"
                                    href="{% if products.has_previous %} {% url 'products:paginator' products.previous_page_number %} {% else %} # {% endif %}"
                                    tabindex="-1" aria-disabled="true">
-                                    Предыдущая
+                                    Նախորդ
                                 </a>
                             </li>
                             {% for page in products.paginator.page_range %}
@@ -102,7 +102,7 @@
                             <li class="page-item {% if not products.has_next %} disabled {% endif %}">
                                 <a class="page-link"
                                    href="{% if products.has_next %} {% url 'products:paginator' products.next_page_number %} {% else %} # {% endif %}">
-                                    Следующая
+                                    Հաջորդը
                                 </a>
                             </li>
                         </ul>
@@ -121,7 +121,7 @@
 {% block footer %}
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Store 2022</p>
+        <p class="m-0 text-center text-white"> Store 2024</p>
     </div>
     <!-- /.container -->
 </footer>
