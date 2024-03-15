@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'users',
     'django.contrib.humanize',
     'rest_framework',
+    'order'
 
 ]
 
